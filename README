@@ -1,1 +1,11 @@
 Simple iRODS prometheus exporter.
+
+This exporter adds the irods_service_running metric.
+In addition, the standard metrics created by the python prometheus package are shown.
+
+Once the irodsMonitor software is included in iRODS 
+(see https://github.com/irods/irods/issues/3610), this exporter will be modified to
+also export the metrics provided by irodsMonitor.
+
+This exporter uses port 9856 
+(see https://github.com/prometheus/prometheus/wiki/Default-port-allocations).
